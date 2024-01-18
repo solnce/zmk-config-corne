@@ -4,15 +4,16 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "chippy.dtsi"
-
-&default_transform {
-    col-offset = <6>;
-};
+#include "chipper.dtsi"
 
 &five_column_transform {
 	col-offset = <6>;
 };
+
+&default_transform {
+	col-offset = <6>;
+};
+
 
 &kscan0 {
 	col-gpios
