@@ -17,16 +17,16 @@
 #define ADJS    4
 
 / {
-        
+
         chosen {
 		zmk,kscan = &kscan0;
-		zmk,matrix_transform = &default_transform;
+		zmk,matrix_transform = &five_column_transform;
 	};
 
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer { 
+                default_layer {
 // DEFAULT LAYER
 // .--------------------------------------------------------------.       .-----------------------------------------------------------.
 // |   ESC        |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |   BKSP   |
