@@ -55,21 +55,21 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
 			, <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
-		
+
 	};
 
 	// TODO: per-key RGB node(s)?
 };
 
-	
+
 //	&i2c0 {
-//	
+//
 // 	status = "okay";
-//	
+//
 //    compatible = "nordic,nrf-twi";
 //    sda-pin = <4>;
 //    scl-pin = <5>;
-//   
+//
 //
 //	oled: ssd1306@3c {
 //		compatible = "solomon,ssd1306fb";
@@ -111,7 +111,7 @@ display_i2c: &i2c0 {
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
  };
- 
+
 &display_i2c {
  	status = "okay";
 	oled: ssd1306@3c {

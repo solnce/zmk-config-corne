@@ -12,14 +12,14 @@ if SHIELD_CHIPPY_RIGHT
 
 config ZMK_KEYBOARD_NAME
 	default "Chippy Right"
-	
+
 endif
 
 if SHIELD_CHIPPY_LEFT || SHIELD_CHIPPY_RIGHT
 
 config ZMK_SPLIT
 	default y
- 
+
 if ZMK_DISPLAY
 
 config I2C
